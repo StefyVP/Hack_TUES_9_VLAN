@@ -1,8 +1,13 @@
 import subprocess
+import sys
+
+PYTHONIOENCODING = 'utf-8'
+
+# sys.stdout.encoding()
 
 networks = subprocess.check_output(['netsh', 'wlan', 'show', 'network'])
 
-# decode_network = networks.encode('utf-8').strip()
-decode_network2 = networks.decode('ascii').strip()
+networks = networks.decode('cp437')
 
-print(decode_network2)
+print(networks)
+
