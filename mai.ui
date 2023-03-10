@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>785</width>
-    <height>552</height>
+    <width>867</width>
+    <height>636</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -90,41 +90,11 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Details:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="details_label">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>270</y>
-      <width>721</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(233, 239, 255);
-font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="check_btn">
+   <widget class="QPushButton" name="refresh_btn">
     <property name="geometry">
      <rect>
       <x>360</x>
       <y>170</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Check</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="refresh_btn">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>460</y>
       <width>71</width>
       <height>41</height>
      </rect>
@@ -190,6 +160,75 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;
     </property>
     <property name="text">
      <string>Password to Network:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="msg_area">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>811</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 241, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="location_btn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>560</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Location</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="time_btn">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>560</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connection Time</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dns_btn">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>560</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DNS checker</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="snmp_btn">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>560</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SNMP checker</string>
     </property>
    </widget>
   </widget>
