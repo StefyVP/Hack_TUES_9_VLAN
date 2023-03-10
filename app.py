@@ -7,8 +7,6 @@ import getNetworks
 import connect_wifi
 import socket
 
-import sqlite3
-
 network_list = getNetworks.getNetworksFunc()
 
 # IPaddress = socket.gethostbyname(socket.gethostname())
@@ -41,10 +39,10 @@ class check_network(QDialog):
             only_names.append(el.split(": ", 1)[1])
             dic[el] = el.split(": ", 1)[1]
 
-        print(dic)
+        # print(dic)
         print(f"Network: {dic[chosen_network]}")
 
-        connect_wifi.createNewConnection(dic[chosen_network])
+        # connect_wifi.createNewConnection(dic[chosen_network])
         connect_wifi.connect(dic[chosen_network], dic[chosen_network])
         # print('yey')
 
@@ -53,10 +51,11 @@ class check_network(QDialog):
 
     def refresh_networks(self):
         network_list = getNetworks.getNetworksFunc()
+        self.comboBox.clear()
         self.comboBox.addItems(network_list)
 
-
-
+        IPaddress = socket.gethostbyname(socket.gethostname())
+        self.connected_label.setText('Connected to: ' + str(IPaddress))
 
 
 # main
@@ -72,3 +71,10 @@ try:
     sys.exit(app.exec_())
 except:
     print("Exiting")
+
+
+# TO DO
+
+# - da se sloji connection s parola
+# - da se napravi pri refresh opciqta na comboBox-a da si ostava
+# - eentualno da izliza novo prozorche pokazvashto minali vryzki sys zapameteni paroli
