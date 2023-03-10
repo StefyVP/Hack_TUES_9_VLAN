@@ -8,7 +8,7 @@ from connect_wifi import *
 import socket
 # import require
 import location
-import snmp
+import ping
 import dns_checker
 import datetime
 
@@ -39,7 +39,7 @@ class check_network(QDialog):
         self.refresh_btn.clicked.connect(self.refresh_networks)
         self.location_btn.clicked.connect(self.location_show)
         self.time_btn.clicked.connect(self.connection_time_show)
-        self.snmp_btn.clicked.connect(self.snmp_show)
+        self.ping_btn.clicked.connect(self.ping_show)
         self.dns_btn.clicked.connect(self.dns_show)
 
     def make_connection(self):
@@ -104,15 +104,19 @@ class check_network(QDialog):
 
     def dns_show(self):
         status = ''
-        status += dns_checker.check()
+        status += dns_checker.check_dns_spoofing()
 
         self.msg_area.setText(status)
 
-    def snmp_show(self):
-        status = ''
-        status += str(snmp.return_status()) + "\n"
+    def ping_show(self):
 
-        self.msg_area.setText(status)
+        results = ping.ping_network()
+        str_results = ''
+
+        for el in results:
+            str_results += el
+
+        self.msg_area.setText(str_results)
 
 
 
