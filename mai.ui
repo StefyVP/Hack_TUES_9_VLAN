@@ -28,8 +28,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>30</y>
+      <x>40</x>
+      <y>10</y>
       <width>301</width>
       <height>51</height>
      </rect>
@@ -45,10 +45,10 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>70</y>
+      <x>40</x>
+      <y>60</y>
       <width>301</width>
-      <height>61</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -59,24 +59,11 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Let's see</string>
     </property>
    </widget>
-   <widget class="QProgressBar" name="progressBar">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>490</y>
-      <width>691</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>0</number>
-    </property>
-   </widget>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>160</y>
+      <x>40</x>
+      <y>110</y>
       <width>291</width>
       <height>51</height>
      </rect>
@@ -90,7 +77,7 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>40</x>
       <y>240</y>
       <width>71</width>
       <height>16</height>
@@ -103,12 +90,12 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Details:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="details_label">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>40</x>
       <y>270</y>
-      <width>661</width>
+      <width>721</width>
       <height>171</height>
      </rect>
     </property>
@@ -120,10 +107,10 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="check_btn">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>360</x>
       <y>170</y>
       <width>71</width>
       <height>41</height>
@@ -131,6 +118,78 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Check</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh_btn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>460</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connect_btn">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>120</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="connected_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Connected to: </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password_field">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>110</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>80</y>
+      <width>301</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Password to Network:</string>
     </property>
    </widget>
   </widget>
