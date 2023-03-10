@@ -1,0 +1,55 @@
+body{
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,247,45,1) 100%);
+    color: chocolate;
+    text-shadow: 1px 1px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction:  row;
+    flex-flow: row;
+}
+ul{
+    display: flex;
+    flex-direction:  row;
+    flex-flow: row;
+    margin: 0 auto;
+}
+nav ul:first-child{
+    padding-left: 0px;
+}
+nav ul ul:first-child{
+    padding-left: 10px;
+}
+nav ul ul{
+    background: coral;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 12px;
+}
+
+section div{
+    margin: 0 auto;
+    padding: 10px 20%;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 12px;
+    height: auto;
+    width: 30%;
+    background: rgb(250, 228, 116);
+
+}
+div:first-child{
+    padding-bottom: 10px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
