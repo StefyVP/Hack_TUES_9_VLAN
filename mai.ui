@@ -218,7 +218,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>DNS checker</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="snmp_btn">
+   <widget class="QPushButton" name="ping_btn">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -228,7 +228,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      </rect>
     </property>
     <property name="text">
-     <string>SNMP checker</string>
+     <string>ping</string>
     </property>
    </widget>
   </widget>
