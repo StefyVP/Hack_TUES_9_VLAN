@@ -1,10 +1,9 @@
-# importing the os module
 import os
-# defining the function to establish a new connection
+
 
 def create_new_connection(name, SSID, password):
 
-    print('hm')
+    # print('hm')
 
     config = """<?xml version="1.0"?>
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -39,7 +38,7 @@ def create_new_connection(name, SSID, password):
     with open("C:\\wifis\\" + name + ".xml", 'w') as file:
         file.write(config)
 
-    print('pliok')
+    # print('pliok')
 
     wlan_command = 'netsh wlan add profile filename ="C:\\wifis\\' + name + ".xml\"" + ' interface = "Wi-Fi"'
     os.system(wlan_command)

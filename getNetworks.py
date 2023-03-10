@@ -30,7 +30,7 @@ def getNetworksFunc():
         # else:
             # info_for_net[name_net[el]] = el
 
-    print(networks)
+    # print(networks)
 
     # print(name_net)
 

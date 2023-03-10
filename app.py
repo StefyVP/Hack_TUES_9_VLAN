@@ -8,6 +8,8 @@ from connect_wifi import *
 import socket
 import require
 import location
+import snmp
+import dns_checker
 
 network_list = getNetworks.getNetworksFunc()
 
@@ -34,6 +36,8 @@ class check_network(QDialog):
         self.refresh_btn.clicked.connect(self.refresh_networks)
         self.location_btn.clicked.connect(self.location_show)
         self.time_btn.clicked.connect(self.connection_time_show)
+        self.snmp_btn.clicked.connect(self.snmp_show)
+        self.dns_btn.clicked.connect(self.dns_show)
 
     def make_connection(self):
         global network_list
@@ -64,8 +68,6 @@ class check_network(QDialog):
 
     def refresh_networks(self):
 
-
-
         network_list = getNetworks.getNetworksFunc()
         self.comboBox.clear()
         self.comboBox.addItems(network_list)
@@ -73,7 +75,7 @@ class check_network(QDialog):
         IPaddress = socket.gethostbyname(socket.gethostname())
         self.connected_label.setText('Connected to: ' + str(IPaddress))
 
-    def location_show(self):
+    def location_show(self): ############################
         global msgs_string
 
         print('of')
@@ -85,8 +87,20 @@ class check_network(QDialog):
 
         self.msg_area.setText(msgs_string)
 
-    def connection_time_show(self):
-        ...
+    def connection_time_show(self): ######################
+        require.main()
+
+    def dns_show(self):
+        status = ''
+        status += dns_checker.check()
+
+        self.msg_area.setText(status)
+
+    def snmp_show(self):
+        status = ''
+        status += str(snmp.return_status()) + "\n"
+
+        self.msg_area.setText(status)
 
 
 
