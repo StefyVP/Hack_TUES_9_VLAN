@@ -1,19 +1,38 @@
 body{
-    background: rgb(34,193,195);
-    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,247,45,1) 100%);
-    color: chocolate;
-    text-shadow: 1px 1px 0px;
+    background: rgb(41, 131, 142);
+    background: radial-gradient(circle, #42d9c8 0%, #a01823 100%);
+    color: #fff ;
+    text-shadow: 1px 1px 1px;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: rgb(41, 131, 142);
 
+}
+a:hover{
+    color: #a01823;
+    font-weight: bold;    
+}
 .centered{
     text-align: center;
 }
-
+.lightred{
+    color: #a01823;
+    text-align: center;
+}
 nav{
+    background: #42d9c8;
+    background: radial-gradient(circle, #42d9c8 20%, rgb(41, 131, 142) 100%);
+    border: solid 1px black;
+    border-radius: 25px;
     display: flex;
     flex-direction:  row;
     flex-flow: row;
+    padding: auto 20px;
+    margin: auto 15%;
+    overflow: hidden;
+    
 }
 ul{
     display: flex;
@@ -28,11 +47,10 @@ nav ul ul:first-child{
     padding-left: 10px;
 }
 nav ul ul{
-    background: coral;
-    margin: 0 auto;
-    padding: 10px;
-    border: solid 1px black;
-    border-radius: 12px;
+    margin: 10px auto;
+    padding: 10px auto;
+    width: 110px;
+    text-align: center;
 }
 
 section div{
@@ -43,8 +61,17 @@ section div{
     border-radius: 12px;
     height: auto;
     width: 30%;
-    background: rgb(250, 228, 116);
+    background: transparent;
+    background: rgb(41, 131, 142);
+    background: radial-gradient(circle, rgb(41, 131, 142) 20%, rgb(160, 24, 35) 100%);
+    opacity: 0.5;
+}
 
+section div:hover{
+    opacity: 1;
+}
+section div:first-child{
+    padding-bottom: 20px;
 }
 div:first-child{
     padding-bottom: 10px;
@@ -52,4 +79,79 @@ div:first-child{
 section{
     display: flex;
     flex-direction: column;
+}
+
+
+.btn{
+    background: #42d9c8;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(82, 54, 119), #a21768);
+    border: #a01823;
+    border-radius: 12px;
+}
+.hoverbtn:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    background-color: #a01823;
+    inset: 0;
+    transition: 0.5s;
+}
+
+footer{
+    background: #266860;
+    color: #a01823;
+    background: radial-gradient(circle, #42d9c8 20%, rgb(41, 131, 142) 100%);
+    border: solid 1px black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction:  row;
+    padding: auto 20px;
+    margin: auto 15%;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 500px){
+  nav ul:first-child{
+      padding-left: 0px;
+  }
+  nav ul ul:first-child{
+    padding-left: 10px;
+  }
+  nav ul ul{
+    margin: auto;
+    padding: auto;
+    width: 70px;
+    text-align: center;
+  }
+
+nav{
+  padding: auto;
+  margin: 0 auto;
+  width:80%;
+  text-align:center;
+  color: rgb(29, 75, 101);
+}
+section div{
+  margin: 0 auto;
+  padding: 10px 10%;
+  border: solid 2px black;
+  border-radius: 20px;
+  height: auto;
+  width: 70%;
+  background: transparent;
+  background: rgb(41, 131, 142);
+  opacity: 1;
+}
+.lin1{
+  background: linear-gradient(rgb(160, 24, 35) 10%, rgb(41, 131, 142) 110%);
+}
+.lin2{
+  background: linear-gradient(rgb(41, 131, 142) 20%, rgb(160, 24, 35) 110%);
+}
+
 }
