@@ -8,8 +8,8 @@ import connect_wifi
 import socket
 
 network_list = getNetworks.getNetworksFunc()
-
-# IPaddress = socket.gethostbyname(socket.gethostname())
+beginningIPaddress = socket.gethostbyname(socket.gethostname())
+print("beginning:", beginningIPaddress)
 
 class check_network(QDialog):
     def __init__(self):
@@ -20,7 +20,7 @@ class check_network(QDialog):
         # print(only_names)
 
         IPaddress = socket.gethostbyname(socket.gethostname())
-        print(IPaddress)
+        print("IP:", IPaddress)
         self.connected_label.setText('Connected to: ' + str(IPaddress))
 
         self.comboBox.addItems(network_list)
@@ -47,6 +47,15 @@ class check_network(QDialog):
         # print('yey')
 
         IPaddress = socket.gethostbyname(socket.gethostname())
+        print("IPadd gethostbyname",IPaddress)
+        if(IPaddress == beginningIPaddress):
+            connected = 0
+        else:
+            connected = 1
+
+        print("connected=", connected)
+        if(connected == 0):
+            ...
         self.connected_label.setText('Connected to: ' + str(IPaddress))
 
     def refresh_networks(self):
