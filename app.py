@@ -6,16 +6,19 @@ from PyQt5.QtGui import QPixmap
 import getNetworks
 from connect_wifi import *
 import socket
-import require
+# import require
 import location
 import snmp
 import dns_checker
+import datetime
 
 network_list = getNetworks.getNetworksFunc()
 
 # IPaddress = socket.gethostbyname(socket.gethostname())
 
 msgs_string = ''
+
+monitor_start_time = datetime.datetime.now()
 
 class check_network(QDialog):
     def __init__(self):
@@ -61,10 +64,15 @@ class check_network(QDialog):
         print(password)
         create_new_connection(dic[chosen_network], dic[chosen_network], password)
         wlan_connect(dic[chosen_network])
+
         # print('yey')
 
         IPaddress = socket.gethostbyname(socket.gethostname())
         self.connected_label.setText('Connected to: ' + str(IPaddress))
+
+        global monitor_start_time
+        if IPaddress != '127.0.0.1':
+            monitor_start_time = datetime.datetime.now()
 
     def refresh_networks(self):
 
@@ -88,7 +96,11 @@ class check_network(QDialog):
         self.msg_area.setText(msgs_string)
 
     def connection_time_show(self): ######################
-        require.main()
+        # monitor_end_time = datetime.datetime.now()
+
+        duration = datetime.datetime.now() - monitor_start_time
+
+        self.msg_area.setText(str(duration))
 
     def dns_show(self):
         status = ''
