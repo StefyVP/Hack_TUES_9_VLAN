@@ -17,10 +17,18 @@ a:hover{
 .centered{
     text-align: center;
 }
-img{
-    margin: 0 auto;
-    
+
+img {
+    position:absolute;
+    top: 50px;
+    bottom: 0px;
+    left: -13px;
 }
+
+table {
+    position:relative;
+}
+
 .mar{
     margin: auto;
 }
@@ -174,3 +182,4 @@ button{
     inset: 0;
     transition: 0.5s;
 }
+
