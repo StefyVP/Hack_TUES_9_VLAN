@@ -17,6 +17,10 @@ a:hover{
 .centered{
     text-align: center;
 }
+img{
+    margin: 0 auto;
+    
+}
 .mar{
     margin: auto;
 }
