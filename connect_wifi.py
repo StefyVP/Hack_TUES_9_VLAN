@@ -35,7 +35,12 @@ def create_new_connection(name, SSID, password):
         </MacRandomization>
     </WLANProfile>
 """
-    with open("C:\\wifis\\" + name + ".xml", 'w') as file:
+
+    folder_path = "C:\\wifis"
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    with open(folder_path + "\\" + name + ".xml", 'w') as file:
         file.write(config)
 
     # print('pliok')
