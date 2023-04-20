@@ -75,4 +75,4 @@ react-native-geolocation-service: за да получите текущото м
 * Иоан Евгениев 10 г - site, video
 * Елена Чернева 10 г - desktop app, design
 
-**линк към презентацията ни:** https://docs.google.com/presentation/d/1pxFwEmfCwoBZ6kjgL9Zd0_c2npJ918jDPXufHTlnnlY/edit?usp=sharing
+** https://docs.google.com/presentation/d/1pxFwEmfCwoBZ6kjgL9Zd0_c2npJ918jDPXufHTlnnlY/edit?usp=sharing
