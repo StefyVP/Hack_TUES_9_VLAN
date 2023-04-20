@@ -72,4 +72,4 @@
 * Иоан Евгениев 10 г - site, video
 * Елена Чернева 10 г - desktop app, design
 
-** https://docs.google.com/presentation/d/1pxFwEmfCwoBZ6kjgL9Zd0_c2npJ918jDPXufHTlnnlY/edit?usp=sharing
+**Линк към презентацията: https://docs.google.com/presentation/d/1pxFwEmfCwoBZ6kjgL9Zd0_c2npJ918jDPXufHTlnnlY/edit?usp=sharing
