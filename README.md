@@ -21,6 +21,11 @@
   * CSS
 
 * Mobile App (React-native)
+ *@react-native-community/netinfo: за получаване на мрежова информация
+ *react-native-wifi-reborn: за управление на Wi-Fi връзки
+ *react-native-vector-icons/FontAwesome: за използване на страхотни икони на шрифта
+ *react-native-background-timer: за изпълнение на фонови задачи
+ *react-native-geolocation-service: за да получите текущото местоположение
 
 ## Изтегляне
 
@@ -35,15 +40,6 @@
 
 2. Може да свалите Ve-Fi и в мобилната му версия:
 Това е React Native приложение, което се свързва към избрана Wi-Fi мрежа и след това извършва серия от тестове, за да провери мрежовата връзка. Той използва следните пакети:
-
-@react-native-community/netinfo: за получаване на мрежова информация
-react-native-wifi-reborn: за управление на Wi-Fi връзки
-react-native-vector-icons/FontAwesome: за използване на страхотни икони на шрифта
-
-react-native-background-timer: за изпълнение на фонови задачи
-
-react-native-geolocation-service: за да получите текущото местоположение
-
  
 ## Използване
 
