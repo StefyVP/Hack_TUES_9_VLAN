@@ -26,7 +26,9 @@
 
 Има два начина да си изтеглите Ve-Fi:
 
-1. При сваляне на git-repository като zip. ![image](https://user-images.githubusercontent.com/78636566/233289102-b7d173e7-fefc-4831-80ec-83ba96329bc7.png)
+![image](https://user-images.githubusercontent.com/78636566/233289102-b7d173e7-fefc-4831-80ec-83ba96329bc7.png)
+
+1. При сваляне на git-repository като zip.
 
 - трябва да изтеглите библиотеките - sys, pyqt5, socket, datetime ( pip install *библиотека* )
 - стартирате app.py и всичко е готово
