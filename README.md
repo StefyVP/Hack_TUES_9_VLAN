@@ -20,12 +20,13 @@
   * HTML
   * CSS
 
-* Mobile App (React-native)
- * @react-native-community/netinfo: за получаване на мрежова информация
- * react-native-wifi-reborn: за управление на Wi-Fi връзки
- * react-native-vector-icons/FontAwesome: за използване на страхотни икони на шрифта
- * react-native-background-timer: за изпълнение на фонови задачи
- * react-native-geolocation-service: за да получите текущото местоположение
+* Mobile App 
+  * React-native
+  * @react-native-community/netinfo: за получаване на мрежова информация
+  * react-native-wifi-reborn: за управление на Wi-Fi връзки
+  * react-native-vector-icons/FontAwesome: за използване на страхотни икони на шрифта
+  * react-native-background-timer: за изпълнение на фонови задачи
+  * react-native-geolocation-service: за да получите текущото местоположение
 
 ## Изтегляне
 
